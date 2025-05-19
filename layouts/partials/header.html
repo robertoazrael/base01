@@ -1,0 +1,33 @@
+<header class="bg-white shadow-sm">
+  <div class="container mx-auto px-4 py-4">
+    <nav class="flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold text-indigo-600">{{ .Site.Title }}</a>
+      
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="/about" class="text-gray-600 hover:text-indigo-600">About</a></li>
+        <li><a href="/blog" class="text-gray-600 hover:text-indigo-600">Blog</a></li>
+        <li><a href="/contact" class="text-gray-600 hover:text-indigo-600">Contact</a></li>
+      </ul>
+      
+      <button id="menu-button" class="md:hidden text-gray-600 focus:outline-none">
+        ☰
+      </button>
+    </nav>
+    
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden mt-4">
+      <ul class="space-y-2">
+        <li><a href="/about" class="block text-gray-600 hover:text-indigo-600">About</a></li>
+        <li><a href="/blog" class="block text-gray-600 hover:text-indigo-600">Blog</a></li>
+        <li><a href="/contact" class="block text-gray-600 hover:text-indigo-600">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Toggle mobile menu
+  document.getElementById('menu-button').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>

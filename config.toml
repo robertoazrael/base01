@@ -1,0 +1,21 @@
+baseURL = "http://example.com/"
+languageCode = "en-us"
+title = "Hugo Base01 Theme"
+theme = "base01"
+publishDir = "public"
+
+[params]
+  description = "A minimal TailwindCSS theme for Hugo"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNumbers = false
+
+[outputFormats]
+  [outputFormats.HTML]
+    mediaType = "text/html"
+    isPlainText = false
+    isHTML = true
+    permalinkable = true
